@@ -51,7 +51,7 @@ function UpdateTrip({
         setTripDetails(newTrip);
         setDescriptions(newTrip.tripDescription);
       } catch (err) {
-        console.log("Error fetching updated trip:", err);
+        console.log("Error fetching updated recipe:", err);
       }
     };
 
@@ -74,10 +74,10 @@ function UpdateTrip({
         tripDescription: descriptions,
       };
       await tripsService.updateTrip(updatedTrip);
-      console.log("Trip updated successfully!");
+      console.log("Recipe updated successfully!");
       setTripIsUpdated(true);
     } catch (error) {
-      console.error("Failed to update trip:", error);
+      console.error("Failed to update recipe:", error);
     }
   };
 

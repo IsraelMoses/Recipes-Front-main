@@ -58,13 +58,13 @@ function SelectedTrip({
           const newTrip = await tripsService.getByTripId(trip._id);
           setTrip(newTrip);
         } catch (err) {
-          console.log("Error fetching updated trip:", err);
+          console.log("Error fetching updated recipe:", err);
         }
       } catch (error) {
         console.error("Failed to add comment", error);
       }
     } else {
-      console.log("Missing required fields: comment, trip ID, or user name.");
+      console.log("Missing required fields: comment, recipe ID, or user name.");
     }
   };
 
@@ -79,7 +79,7 @@ function SelectedTrip({
           const newTrip = await tripsService.getByTripId(trip._id);
           setTrip(newTrip);
         } catch (err) {
-          console.log("Error fetching updated trip:", err);
+          console.log("Error fetching updated recipe:", err);
         }
       } catch (error) {
         console.log(error);

@@ -25,8 +25,8 @@ function Navigation({
         {isUserConected && <li onClick={onClickPersonalArea}>Personal Area</li>}
         {!isUserConected && <li onClick={onClickSignIn}>Sign in</li>}
         {!isUserConected && <li onClick={onClickSignUp}>Sign up</li>}
-        {isUserConected && <li onClick={onClickMyTrips}>My trips</li>}
-        {isUserConected && <li onClick={onClickShareTrip}>Share trip</li>}
+        {isUserConected && <li onClick={onClickMyTrips}>My recipe</li>}
+        {isUserConected && <li onClick={onClickShareTrip}>Share recipe</li>}
         <li onClick={onClickSearchTrip}>Search Recipe</li>
         {isUserConected && <li onClick={onClickLogOut}>Log out</li>}
       </ul>

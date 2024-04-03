@@ -106,7 +106,7 @@ function MyTrips({
       />
       {isDeleteClicked ? (
         <div className="pop-up">
-          <p>Are you sure you want to delete the trip?</p>
+          <p>Are you sure you want to delete the recipe?</p>
           <div className="pop-up-buttons">
             <button onClick={() => handleDeleteTrip(tripId)}>delete</button>
             <button onClick={() => setIsDeleteClicked(false)}>cancel</button>
@@ -117,7 +117,7 @@ function MyTrips({
           {trips.length === 0 ? (
             <div className="share-trip-cta">
               <p className="cta-text">
-                Have you gone on any exciting trips recently? We'd love to see
+                Have you gone on any exciting recipe recently? We'd love to see
                 them!
               </p>
               <button className="cta-button" onClick={goToShare}>
